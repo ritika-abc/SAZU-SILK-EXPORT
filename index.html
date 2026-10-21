@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAZU SILK EXPORT PRIVATE LIMITED | Silk & Agro Export-Import, India</title>
+  <meta name="description"
+    content="SAZU SILK EXPORT PRIVATE LIMITED, an Indian export-import company (est. 2026) for silk and agricultural products, sourcing and supply.">
+  <meta property="og:title" content="SAZU SILK EXPORT PRIVATE LIMITED">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Silk and agricultural products, export, import and supply from India.">
+  <meta property="og:image" content="assets/images/og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Manrope:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/images/hero-silk.jpg">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <nav id="nav" class="navbar navbar-expand-lg fixed-top" aria-label="Main">
+    <div class="container">
+      <a class="navbar-brand" href="#home">SAZU SILK EXPORT</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
+        aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#products" data-bs-toggle="dropdown"
+              aria-expanded="false">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#products" data-f="silk">Silk</a></li>
+              <li><a class="dropdown-item" href="#products" data-f="agro">Agro products</a></li>
+              <li><a class="dropdown-item" href="#products" data-f="trade">Sourcing &amp; supply</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#solutions">Export Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#network">Global Network</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-gold" href="#contact">Request a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- HERO: 3 crossfading slides (custom, ~30 lines JS) -->
+    <section id="home" class="hero" aria-roledescription="carousel" aria-label="Featured">
+      <div class="slide on"
+        style="--img:url(assets/image/2.jpg);--fb:linear-gradient(120deg,#5a1626,#C7A66A 60%,#F7F3EB)" role="img"
+        aria-label="Flowing ivory and gold silk fabric"></div>
+      <div class="slide" style="--img:url(assets/image/ag.jpg);--fb:linear-gradient(120deg,#315B43,#8a9a52 60%,#C7A66A)"
+        role="img" aria-label="Indian agricultural field at golden hour"></div>
+      <div class="slide" style="--img:url(assets/image/ex.jpg);--fb:linear-gradient(120deg,#101C2C,#2c4a63 60%,#C7A66A)"
+        role="img" aria-label="Container vessel at sea at golden hour"></div>
+      <div class="container hero-txt">
+        <div class="copy on">
+          <h1>The Art of Silk. The Future of Trade.</h1>
+          <p>Premium silk sourcing and international supply, built on clear communication.</p><a class="btn btn-gold"
+            href="#products">Explore Our Products</a> <a class="btn btn-line" href="#about">Discover SAZU</a>
+        </div>
+        <div class="copy">
+          <h2>From Indian Fields to Global Markets.</h2>
+          <p>Agricultural products sourced and coordinated for international buyers.</p><a class="btn btn-gold"
+            href="#products" data-f="agro">Explore Agro Products</a> <a class="btn btn-line" href="#network">Our Export
+            Network</a>
+        </div>
+        <div class="copy">
+          <h2>Connecting Quality to the World.</h2>
+          <p>Export coordination from first inquiry to delivery follow-up.</p><a class="btn btn-gold"
+            href="#solutions">Our Export Solutions</a> <a class="btn btn-line" href="#contact">Request a Quote</a>
+        </div>
+      </div>
+      <div class="hero-ctl container"><button id="pp" class="ctl" aria-label="Pause slideshow"><i
+            class="fa-solid fa-pause"></i></button>
+        <div class="dots"><button aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button
+            aria-label="Slide 3"></button></div><a href="#intro" class="scrollhint" aria-label="Scroll down"><i
+            class="fa-solid fa-chevron-down"></i></a>
+      </div>
+    </section>
+
+    <!-- INTRO: circular image grows on scroll. --p (0..1) is set by GSAP ScrollTrigger, or by the fallback scroll handler -->
+    <section id="intro" class="intro" data-scrub>
+      <div class="pin">
+        <div class="intro-txt container">
+          <h2>Rooted in India. Connected to the World.</h2>
+          <p>SAZU SILK EXPORT is an emerging export-import business supplying silk and agricultural products to
+            international buyers.</p><a href="#about" class="btn btn-green">About the company</a>
+        </div>
+        <div class="intro-img" style="--img:url(assets/image/4.jpg);--fb:linear-gradient(135deg,#C7A66A,#315B43)"
+          role="img" aria-label="Silk and agricultural textures"></div>
+        <p class="intro-cap">Silk. Agro products. Supply.</p>
+      </div>
+    </section>
+
+    <section id="about" class="sec ivory">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2>An export-import house, founded in 2026.</h2>
+            <p>SAZU SILK EXPORT PRIVATE LIMITED is a young Indian company focused on silk and agricultural products. We
+              source, coordinate and supply to businesses abroad, and we are building our trade network one relationship
+              at a time.</p>
+            <p>We commit to careful attention to product requirements, honest communication and reliable follow-up.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="photo tall" style="--img:url(assets/image/b1.png);--fb:linear-gradient(160deg,#F7F3EB,#C7A66A)"
+              role="img" aria-label="Silk fabric detail" data-aos="fade-left"></div>
+          </div>
+        </div>
+        <div class="row align-items-center g-5 mt-4 flex-lg-row-reverse">
+          <div class="col-lg-6" data-aos="fade-left">
+            <h3>Sourcing and supply</h3>
+            <p>We work from your requirement: product, quantity, packaging and destination, then coordinate suppliers
+              and shipping steps with you.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="photo wide" style="--img:url(assets/image/ab.png);--fb:linear-gradient(160deg,#315B43,#C7A66A)"
+              role="img" aria-label="Harvested grains" data-aos="fade-right"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STICKY CARDS: pure CSS sticky; JS adds depth (scale/dim) to the card being covered -->
+    <section id="solutions" class="cards">
+      <article class="card-s" style="--img:url(assets/image/s1.jpg);--fb:linear-gradient(135deg,#5a1626,#C7A66A)">
+        <div class="bg"></div>
+        <div class="container">
+          <h2>A Legacy Woven in Silk.</h2>
+          <p>Premium silk, sourced with attention to texture, finish and your specification.</p><a href="#products"
+            data-f="silk" class="arrow">Silk products <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </article>
+      <article class="card-s" style="--img:url(assets/image/s2.jpg);--fb:linear-gradient(135deg,#315B43,#8a9a52)">
+        <div class="bg"></div>
+        <div class="container">
+          <h2>Nature’s Finest, Delivered Worldwide.</h2>
+          <p>Agricultural products and grains, coordinated from field to freight.</p><a href="#products" data-f="agro"
+            class="arrow">Agro products <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </article>
+      <article class="card-s" style="--img:url(assets/image/s3.jpg);--fb:linear-gradient(135deg,#101C2C,#2c4a63)">
+        <div class="bg"></div>
+        <div class="container">
+          <h2>Moving Business Beyond Borders.</h2>
+          <p>Export coordination covering documentation and shipping steps.</p><a href="#process" class="arrow">See the
+            workflow <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </article>
+      <article class="card-s" style="--img:url(assets/image/s4.jpg);--fb:linear-gradient(135deg,#242824,#C7A66A)">
+        <div class="bg"></div>
+        <div class="container">
+          <h2>One Partner. Global Possibilities.</h2>
+          <p>Import, supply and trade support through a single point of contact.</p><a href="#contact"
+            class="arrow">Start an inquiry <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </article>
+    </section>
+
+    <section id="products" class="sec">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+          <h2>Products &amp; services</h2>
+          <div class="filters" role="group" aria-label="Filter"><button class="on" data-f="all">All</button><button
+              data-f="silk">Silk</button><button data-f="agro">Agro</button><button data-f="trade">Supply &amp;
+              shipping</button></div>
+        </div>
+        <div class="row g-4" id="grid">
+          <div class="col-md-6 col-lg-6 item" data-c="silk">
+            <div class="photo r45" style="--img:url(assets/image/4.jpg);--fb:linear-gradient(160deg,#5a1626,#C7A66A)"
+              role="img" aria-label="Silk fabrics"></div>
+            <h3>Silk fabrics</h3>
+            <p>Silk fabrics and related products.</p><a href="#contact" data-prod="Silk">Discover Product</a>
+          </div>
+          <div class="col-md-6 col-lg-6 item" data-c="agro">
+            <div class="photo r45" style="--img:url(assets/image/s2.jpg);--fb:linear-gradient(160deg,#315B43,#C7A66A)"
+              role="img" aria-label="Grains and agro products"></div>
+            <h3>Agro products &amp; grains</h3>
+            <p>Agricultural products, subject to availability.</p><a href="#contact" data-prod="Agro">Discover
+              Product</a>
+          </div>
+          <!-- <div class="col-md-6 col-lg-4 item" data-c="trade">
+            <div class="photo r45"
+              style="--img:url(assets/images/p-supply.jpg);--fb:linear-gradient(160deg,#242824,#C7A66A)" role="img"
+              aria-label="Packaging and supply"></div>
+            <h3>Sourcing &amp; supply</h3>
+            <p>Product sourcing to your requirement.</p><a href="#contact" data-prod="Sourcing">Discover Product</a>
+          </div> -->
+          <!-- <div class="col-md-6 col-lg-4 item" data-c="trade">
+            <div class="photo r45"
+              style="--img:url(assets/images/p-ship.jpg);--fb:linear-gradient(160deg,#101C2C,#2c4a63)" role="img"
+              aria-label="Container port"></div>
+            <h3>Trade &amp; shipping</h3>
+            <p>Export-import and shipping coordination.</p><a href="#contact" data-prod="Other">Make an inquiry</a>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="vid">
+      <video id="bgv" autoplay muted loop playsinline preload="none" poster="assets/images/vid-poster.jpg">
+        <source src="assets/videos/ocean.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <h2>Quality in Every Connection.</h2>
+        <p>Dependable product supply and clear communication across borders.</p><a class="btn btn-gold"
+          href="#contact">Discuss Your Requirements</a>
+      </div>
+      <button id="vp" class="ctl" aria-label="Pause video"><i class="fa-solid fa-pause"></i></button>
+    </section>
+
+    <!-- SHIP SCENE: --p drives the ship across the water. No destinations are named on purpose. -->
+    <section id="network" class="ship" data-scrub>
+      <div class="pin">
+        <svg viewBox="0 0 1200 500" preserveAspectRatio="xMidYMax slice" role="img"
+          aria-label="Illustration of a cargo ship crossing the sea at sunset">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#101C2C" />
+              <stop offset=".7" stop-color="#7a4a4a" />
+              <stop offset="1" stop-color="#C7A66A" />
+            </linearGradient>
+          </defs>
+          <rect width="1200" height="500" fill="url(#sky)" />
+          <circle cx="880" cy="300" r="46" fill="#F7F3EB" opacity=".85" />
+          <g fill="#0b1522">
+            <rect x="40" y="250" width="6" height="60" />
+            <rect x="40" y="250" width="50" height="5" />
+            <rect x="140" y="262" width="5" height="50" />
+            <rect x="140" y="262" width="40" height="4" />
+            <rect x="0" y="300" width="260" height="30" />
+          </g>
+          <g class="ship">
+            <path d="M0 40h300l-30 40H30z" fill="#242824" />
+            <rect x="215" y="0" width="45" height="40" fill="#F7F3EB" />
+            <g>
+              <rect x="20" y="14" width="40" height="26" fill="#C7A66A" />
+              <rect x="62" y="14" width="40" height="26" fill="#315B43" />
+              <rect x="104" y="14" width="40" height="26" fill="#8b2e3c" />
+              <rect x="146" y="14" width="40" height="26" fill="#F7F3EB" />
+              <rect x="62" y="-12" width="40" height="26" fill="#2c4a63" />
+              <rect x="104" y="-12" width="40" height="26" fill="#C7A66A" />
+            </g>
+          </g>
+          <path class="wave w1" d="M0 380q150-30 300 0t300 0 300 0 300 0v120H0z" fill="#1d3550" />
+          <path class="wave w2" d="M0 410q150-30 300 0t300 0 300 0 300 0v90H0z" fill="#101C2C" />
+        </svg>
+        <div class="container ship-txt">
+          <h2>Export coordination, step by step.</h2>
+          <p>We work from your requirement through documentation and shipping coordination. Destinations are confirmed
+            per inquiry.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="sec ivory">
+      <div class="container">
+        <h2>Our proposed export workflow</h2>
+        <p class="lead2">A planned service flow; steps are confirmed with you for each inquiry.</p>
+        <ol class="tl">
+          <li>Product Inquiry</li>
+          <li>Requirement Discussion</li>
+          <li>Product and Supplier Confirmation</li>
+          <li>Order Coordination</li>
+          <li>Shipping and Documentation Coordination</li>
+          <li>Delivery and Follow-up</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Stats: no verified numbers yet. To show a counter add data-count="N" to a .num and it animates. -->
+    <section class="sec navy">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-lg-3">
+            <div class="num">Silk &amp; Agro</div>
+            <p>Two product focus areas</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="num">Sourcing to shipping</div>
+            <p>Service scope</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="num">Global</div>
+            <p>Trade ambition</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="num">Form &amp; email</div>
+            <p>Inquiry channels</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="container">
+        <h2>Why choose SAZU Silk Export</h2>
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-lg-4 why"><i class="fa-regular fa-gem"></i>
+            <h3>Silk and agro focus</h3>
+            <p>Two product areas we know we want to serve well.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 why"><i class="fa-solid fa-boxes-stacked"></i>
+            <h3>Sourcing and supply</h3>
+            <p>Coordination from supplier to shipment.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 why"><i class="fa-solid fa-ship"></i>
+            <h3>Export-import support</h3>
+            <p>Help with inquiries in both directions.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 why"><i class="fa-regular fa-comments"></i>
+            <h3>Clear communication</h3>
+            <p>Business-focused, prompt replies.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 why"><i class="fa-solid fa-clipboard-check"></i>
+            <h3>Your requirements first</h3>
+            <p>We confirm specifications before ordering.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 why"><i class="fa-regular fa-handshake"></i>
+            <h3>Long-term relationships</h3>
+            <p>Built on follow-through.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="row g-0">
+
+        <div class="col-lg-5 c-left">
+          <h2>Let’s Build Your Next Trade Opportunity.</h2>
+          <p>Tell us what you need. We will reply by email.</p>
+
+          <address>
+            <i class="fa-solid fa-location-dot"></i>
+            SAZU SILK EXPORT PRIVATE LIMITED<br>
+            339/7D, 6th Cross, Adarsha Nagar,<br>
+            Kavalbysandra, Bengaluru,<br>
+            Karnataka 560032, India
+            <br><br>
+
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:sazusilkexport@gmail.com">
+              sazusilkexport@gmail.com
+            </a>
+            <br><br>
+
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+919035687671">
+              +91 9035687671
+            </a>
+            <br>
+
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+917411494182">
+              +91 7411494182
+            </a>
+          </address>
+        </div>
+
+        <div class="col-lg-7 c-right">
+          <form id="f" novalidate data-endpoint=""><!-- set data-endpoint to your Formspree/API URL; see README -->
+            <div class="row g-3">
+              <div class="col-md-6"><label for="n">Name</label><input id="n" name="name" required
+                  autocomplete="name"><small class="err" id="n-e"></small></div>
+              <div class="col-md-6"><label for="co">Company name</label><input id="co" name="company"
+                  autocomplete="organization"></div>
+              <div class="col-md-6"><label for="em">Email</label><input id="em" name="email" type="email" required
+                  autocomplete="email"><small class="err" id="em-e"></small></div>
+              <div class="col-md-6"><label for="ph">Phone</label><input id="ph" name="phone" type="tel"
+                  autocomplete="tel"></div>
+              <div class="col-md-6"><label for="pc">Product category</label><select id="pc" name="category">
+                  <option>Silk</option>
+                  <option>Agro</option>
+                  <option>Sourcing</option>
+                  <option>Other</option>
+                </select></div>
+              <div class="col-md-6"><label for="it">Inquiry type</label><select id="it" name="type">
+                  <option>Export</option>
+                  <option>Import</option>
+                  <option>Supply</option>
+                  <option>Other</option>
+                </select></div>
+              <div class="col-12"><label for="m">Message</label><textarea id="m" name="message" rows="4"
+                  required></textarea><small class="err" id="m-e"></small></div>
+              <div class="col-12"><label class="chk"><input type="checkbox" id="cs" required> I agree to be contacted
+                  about this inquiry.</label><small class="err" id="cs-e"></small></div>
+            </div>
+            <button class="btn btn-gold mt-3" type="submit">Submit Inquiry</button>
+            <p id="st" role="status" aria-live="polite" class="st"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="brand">SAZU SILK EXPORT</div>
+          <p>SAZU SILK EXPORT PRIVATE LIMITED. Silk and agricultural products, export, import and supply from India.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h4>Explore</h4><a href="#about">About</a><a href="#products">Products</a><a href="#process">Workflow</a><a
+            href="#contact">Contact</a>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4>Categories</h4><a href="#products" data-f="silk">Silk</a><a href="#products" data-f="agro">Agro</a><a
+            href="#products" data-f="trade">Supply</a>
+        </div>
+        <div class="col-lg-3">
+          <h4>Contact</h4>
+
+          <address>
+            <i class="fa-solid fa-location-dot"></i>
+            SAZU SILK EXPORT PRIVATE LIMITED<br>
+            339/7D, 6th Cross, Adarsha Nagar,<br>
+            Kavalbysandra, Bengaluru,<br>
+            Karnataka 560032, India
+             
+
+            <a href="mailto:sazusilkexport@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              sazusilkexport@gmail.com
+            </a>
+            
+
+            <a href="tel:+919035687671">
+              <i class="fa-solid fa-phone"></i>
+              +91 9035687671
+            </a>
+            
+
+            <a href="tel:+917411494182">
+              <i class="fa-solid fa-phone"></i>
+              +91 7411494182
+            </a>
+          </address>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between"><small>© <span id="yr"></span> SAZU SILK EXPORT PRIVATE
+          LIMITED</small><a href="#home" id="top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
